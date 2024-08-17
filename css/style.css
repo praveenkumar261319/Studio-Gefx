@@ -110,6 +110,7 @@ font-family: poppins;
 
 html {
   height: 100%;
+  width: 100%;
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
 }
@@ -118,10 +119,10 @@ html {
 
 .hero-section {
   align-items: flex-start;
-  background-color: #000000;
+  background-color: #000000;  
   background-repeat: no-repeat;
   display: flex;
-  
+  overflow: hidden;
   min-height: 100%;
   justify-content: center;
   height: 61rem;
@@ -153,6 +154,29 @@ html {
       grid-template-columns: repeat(4, 1fr);
   }
 }
+
+
+@media(max-width: 960px) {
+  .hero-section{
+    height: 100rem;
+  }
+
+  .card-grid{
+    margin-top: 5rem;
+    }
+
+    * {
+      overflow-x: auto;
+      overflow-y: visible;
+      scrollbar-width: none;
+    }
+  
+  
+}
+
+
+
+
 
 .card {
   list-style: none;
@@ -682,7 +706,7 @@ textarea.form-control{
   color: #9F9F9F;
   border-radius:0;
   padding-left: 22px;
- 
+ margin-bottom: 16px;
   color: #141414;
   background-color: transparent;
   border:2px solid #141414;
