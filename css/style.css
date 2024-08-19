@@ -127,15 +127,15 @@ html {
   justify-content: center;
   height: 61rem;
  /* padding: var(--spacing-xxl) var(--spacing-l);*/
-  margin-top: 80px;
+  /* margin-top: 50px; */
   
 }
 
 .card-grid {
   display: grid;
-  margin-top: 180px;
+  
   grid-area: 5px;
-  margin-left: 200px;
+  margin: auto;
   grid-template-columns: repeat(1, 1fr);
   grid-column-gap: var(--spacing-l);
  /* grid-row-gap: var(--spacing-l);
@@ -158,11 +158,12 @@ html {
 
 @media(max-width: 960px) {
   .hero-section{
-    height: 100rem;
+    height: 138rem;
   }
 
   .card-grid{
-    margin-top: 5rem;
+    margin-top: 8rem;
+
     }
 
     * {
@@ -172,6 +173,21 @@ html {
     }
   
   
+.green-para {
+
+  font-size: 18px;
+}
+
+
+.logo{
+ 
+  object-fit: contain;
+  width: 150px !important;
+ margin-left: -50rem ;
+
+}
+
+
 }
 
 
@@ -401,7 +417,7 @@ margin: 100px auto;
 
 h2::after {
   content: "";
-margin: auto;
+    margin: auto;
   position: absolute;
   bottom: -15px;
   height: 4px;
@@ -424,11 +440,13 @@ h2:hover::after {
 
 
 .green-para {
-font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 30px ;
 
+  font-size: 25px ;
+  font-family: "Josefin Sans", sans-serif;
   margin-bottom: 80px;
- 
+ width: 70%;
+ margin: auto;
+ margin-bottom: 2rem;
   color: #000000;
  
  
@@ -466,7 +484,7 @@ font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 @media (min-width: 768px) { 
   .bd-placeholder-img-lg {
     font-size: 3.5rem;
-  }
+  }d
 }
 
 
@@ -503,22 +521,27 @@ font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 35px;
   text-transform: capitalize;
   font-weight: 550;
-  text-align: justify;
+  text-align: center;
 color: #000;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif  ;  
+  font-family:'Lucida Sans',  ;  
+
+  
 }
 
 .expertise-para {
   font-size: 20px;
- margin-top: 20px;
+ margin-top: 20px;  
+ font-weight: 500;
   letter-spacing: 1px;
   text-align: justify;
+
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .expertise-para-0 {
 
   font-size: 20px;
-  border-style: dashed;
+ 
    letter-spacing: 1px;
    text-align: justify;
  
@@ -536,14 +559,13 @@ color: #000;
 .exp-subtitle {
   margin-top: 30px;
   margin-bottom: 10px;
-  
+  font-family: "Sedan", serif;
   font-weight: 600; 
   font-size: 25px;
   text-align: left;
   text-transform: capitalize;
     border-style: dashed;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
+  
 
 }
 
@@ -584,8 +606,8 @@ color: #000;
 }
 
 .logo{
-  margin-top: -10px;
-  margin-left: -145px;
+ 
+  margin-left: 16rem;
    width: 200px;
 
 }
@@ -611,7 +633,7 @@ h2,
 
   font-size: 38px;
  text-align: center;
-  letter-spacing: 0.5em;
+  letter-spacing: 0.3rem;
   text-transform: uppercase;
   font-weight: 700;
   color: #141414;
@@ -1203,6 +1225,7 @@ margin-bottom:30px ;
 @media (max-height: 320px ){
   .navbar .navbar-collapse{
     max-height: 240px;
+    
   }
 }
 
@@ -1237,17 +1260,29 @@ margin-bottom:30px ;
 
 /* 2.2 Navigation */
 
+.nav-cls {
+  height: 30rem;
+}
+
+
+
 
 
 .navbar-nav{
-  margin-top:4px;
-  margin-right: -160px;
+
+
+  margin-right: 14rem;
   font-size: 12px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  
 }
 
+
+
+
 .navbar-nav li{
+  padding: 1.5rem;
   position: relative;
   margin-top: 0;
   -webkit-perspective: 2000px;
@@ -3082,6 +3117,11 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   background-color: transparent;
 }
 
+
+.img-add {
+
+  object-fit: contain;
+}
 
 
 
