@@ -167,12 +167,12 @@ html {
 
     }
 
-    * {
+    /* * {
       overflow-x: auto;
       overflow-y: visible;
       scrollbar-width: none;
     }
-  
+   */
   
 .green-para {
 
