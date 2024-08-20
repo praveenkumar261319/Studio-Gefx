@@ -56,6 +56,7 @@
 
 
 
+
 /* 1.1 General */
 
 
@@ -176,6 +177,7 @@ html {
 .green-para {
 
   font-size: 18px;
+  
 }
 
 
@@ -183,7 +185,7 @@ html {
  
   object-fit: contain;
   width: 150px !important;
- margin-left: -50rem ;
+ margin-left: 3rem !important ;
 
 }
 
@@ -393,14 +395,14 @@ html {
 
 .video {
   display:grid;
-  margin-bottom: 2em;
+ margin-bottom: -1rem;
   padding-top: 50px;
 }
 
 
 .title-2 {
     
-  margin-top: 50px;
+  margin-top: -40px;
   
   
 }
@@ -412,6 +414,10 @@ font-size: 48px;
 position: relative;
 cursor: pointer;
 margin: 100px auto;
+font-family: "Laila", serif;
+font-weight: 600;
+
+
 }
 
 
@@ -442,31 +448,31 @@ h2:hover::after {
 .green-para {
 
   font-size: 25px ;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'Josefin Sans';
   margin-bottom: 80px;
  width: 70%;
  margin: auto;
  margin-bottom: 2rem;
   color: #000000;
- 
- 
 
 }
 
 .service-title {
   margin-top: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 45px;
 }
 
 
 .add-title {
-  margin-top: 30px;
-  margin-bottom: -10px;
+  margin-top: 40px;
+  margin-bottom: -30px;
+
+ 
 }
 
 .highlights-title {
 
-  margin-bottom: -80px;  
+  margin-bottom: -30px;  
 }
 
 
@@ -500,12 +506,6 @@ h2:hover::after {
 
 }
 
-.exp-all {
-
-  text-align: center;
-}
-
-
 
 .exp-section {
   margin-bottom: 10px;
@@ -515,25 +515,32 @@ h2:hover::after {
 
 
 .exp-title{
-  margin-top: 50px;
-  margin-bottom: 15px;
-
+  margin-top: 34px;
+ 
+letter-spacing: 3px;
   font-size: 35px;
   text-transform: capitalize;
-  font-weight: 550;
+  font-weight: 600;
   text-align: center;
 color: #000;
-  font-family:'Lucida Sans',  ;  
+font-family: "Balthazar", serif;
 
-  
-}
+  }
+
+
+
+
+
+
+
+
 
 .expertise-para {
-  font-size: 20px;
- margin-top: 20px;  
- font-weight: 500;
+  font-size: 21px;
+ margin-top: 30px;  
+ font-weight: 600;
   letter-spacing: 1px;
-  text-align: justify;
+  
 
   font-family: "Josefin Sans", sans-serif;
 }
@@ -543,7 +550,7 @@ color: #000;
   font-size: 20px;
  
    letter-spacing: 1px;
-   text-align: justify;
+   text-align: left;
  
 }
 
@@ -564,7 +571,8 @@ color: #000;
   font-size: 25px;
   text-align: left;
   text-transform: capitalize;
-    border-style: dashed;
+   
+
   
 
 }
@@ -1013,18 +1021,18 @@ label.mc-label .fa{
 
 .icon-circle-3{
   display: table-footer-group;
-  text-align: center;
+  text-align: left;
   width: 80px;
   height: 80px;
-  line-height: 80px;
-  border-radius: 50%;
-  border:2px solid #fff;
+  line-height: 100px;
+ 
+ 
 }
 
 .icon-circle-3 .fa{
-  font-size:30px;
+  font-size:45px;
   color:#fff;
-  vertical-align: middle;
+  vertical-align: text-bottom;
 }
 
 .icon-circle-3.dark{
@@ -1045,6 +1053,25 @@ a.fa:focus{
   text-decoration: none;
 }
 
+.address-title {
+margin-top: 50px;
+
+
+}
+.icn-title {
+  margin-top: 50px;
+  
+  
+  }
+  
+
+
+
+
+
+
+
+
 
 /* 1.7 Colors */
 
@@ -1052,6 +1079,9 @@ a.fa:focus{
 
 .text-white{
   color:#fff;
+
+
+
 }
 
 .text-primary{
@@ -1269,7 +1299,7 @@ margin-bottom:30px ;
 
 
 .navbar-nav{
-
+margin-top:-6px;
 
   margin-right: 14rem;
   font-size: 12px;
@@ -2317,46 +2347,6 @@ background-color: #1c1d1c25;
 }
 
 
-.video-mask{
-  position: absolute;
-  overflow: hidden;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  color: #fff;
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.video-mask:after{
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(14,14,14,0.6);
-  -webkit-transition: all 0.6s;
-  transition: all 0.6s;
-}
-
-.video-mask .fa{
-  position: absolute;
-  z-index: 2;
-  top:50%;
-  left: 50%;
-  font-size:50px;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-       -o-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
 .gallery-carousel .owl-prev, 
 .gallery-carousel .owl-next{
   position: absolute;
@@ -2398,13 +2388,9 @@ background-color: #1c1d1c25;
   color: #fff;
 }
 
-
-
-
 /* ------------------------------------------------------------------------------- */
 /*  11. Contact
 /* ------------------------------------------------------------------------------- */
-
 
 
 .contact{
@@ -2416,55 +2402,16 @@ background-color: #1c1d1c25;
   margin-top: 40px;
 }
 
-.contact-row{
-  margin-bottom: 35px;
-}
+
 
 .contact-row .icon-title{
   font-size:14px;
-  letter-spacing: 0;
+
   margin-bottom: 12px;
 }
 
 .contact-2 .social{
   text-align: center;
-}
-
-.map{
-  margin-top: 80px;
-  width: 100%;
-  height: 450px;
-  border: 0;
-  text-align: center;
-}
-
-.map-info{
-  text-align: left;
-}
-
-.map-title{
-  margin-bottom: 20px;
-}
-
-.map-info .fa{
-  margin-right: 5px;
-}
-
-.contact-address{
-  margin-top: 50px;
-  text-align: justify;
-}
-
-.contact-address-item .icon-title{
-  font-size: 14px;
-  letter-spacing: 0;
-  margin-top: 35px;
-}
-
-.contact-title
-{
-float: left;
-
 }
 
 
@@ -3119,8 +3066,11 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 
 .img-add {
-
+  margin-top: 10px;
   object-fit: contain;
+  width: 105%;
+  
+
 }
 
 
@@ -3131,29 +3081,83 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 .join-set{
 
-  margin-top: 80px;
-  margin-bottom:80px;
+  margin-top: 55px;
+  margin-bottom:30px;
 }
 
 
 
 .join-title {
   
- height: 100px;
- font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ /* height: 100px; */
+ font-family: "Anek Kannada", sans-serif;
  font-size: 35px;
+ margin-top: 20px;
+ margin-bottom: 10px;
  text-align: center;
- margin-top: 10px;
- margin-bottom: -30PX;
+ /* margin-bottom: -50PX; */
+ font-weight: 600;
  letter-spacing: 3px;
+ padding-bottom: 5px;
+ 
 }
 
+
+
+hr.join-us {
+  margin: auto;
+  width: 41%;
+ border-bottom: 3px solid #807b7e;
+ margin-bottom: 20px;
+}
+
+
+
+hr.our-misssion {
+ 
+  margin: auto;
+  width: 20%;
+ border-bottom: 3px solid #807b7e;
+ margin-bottom: 20px;
+
+
+}
+
+
+hr.our-colabs {
+
+
+  margin: auto;
+  width: 30%;
+ border-bottom: 3px solid #807b7e;
+ margin-bottom: 20px;
+
+
+}
+
+
+hr.our-expertise {
+
+
+  margin: auto;
+  width: 19%;
+ border-bottom: 3px solid #807b7e;
+ margin-bottom: 20px;
+
+
+}
+
+
+
+
+
+
 .join-para  {
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: "Playwrite DE Grund", cursive;
   font-size: 25px;
  text-align: center;
  margin-bottom: 35px;
- margin-top: - 30px;
+line-height: 45px;
  letter-spacing: 1px;
 }
 
@@ -3168,5 +3172,4 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 /* ------------------------------------------------------------------------------- */
 /*  ourworks
-/* ------------------------------------------------------------------------------- */
-
+/* ------------------------------------------------------------------------------- *
