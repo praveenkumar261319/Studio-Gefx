@@ -2336,7 +2336,7 @@ pre code {
     }
 
     .col-md-3 {
-        width: 25%
+        width: 100%
     }
 
     .col-md-2 {
@@ -2348,7 +2348,7 @@ pre code {
     }
 
     .col-md-pull-12 {
-        right: 100%
+        right: 50%
     }
 
     .col-md-pull-11 {
