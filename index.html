@@ -379,7 +379,8 @@
 <div id="slider" class="">
   <div class="container">
     
-     <div class="slide"><span>
+     <div class="slide image">
+      <span>
       <img style="width: 205px;margin-top: 10px;" src="./img/baahubali-2 png.png" alt="png">
      
     </span>
@@ -393,7 +394,7 @@
 
 
 
-    <div class="slide">
+    <div class="slide image">
       <span class=" ">
         <img style="width: 405px; margin: 10px 0px 25px 0px;  " src="./img/adipurush.png" alt="png">
       </span>
@@ -406,7 +407,7 @@
 
 
 
-    <div class="slide">
+    <div class="slide image">
       <span class="">
         <img style="width: 240px; margin:0px 0px 0px 0px; " src="./img/cobra.png" alt="png">
       </span>
@@ -415,13 +416,14 @@
       <hr class="bahu-line ">
 
       <p class="cobra-para">
-        Her birthday calculates past a juice! The envy succeeds across an evident jelly. An afternoon shifts opposite a bust. The tired clash divides a widest sneak. The satire springs onto a misfortune after the inclined car.
+        Delivered 150+ crowd shots within 4 months period, We collobrated with IdentVFX Studio, Kerala. We did crowd assets creations, Crowd Mocap and retargetting, Crowd Simulations, Setting render workflow for Lighting Team. 
+
       </p>
     </div>
 
 
 
-    <div class="slide">
+    <div class="slide image">
       <span class="title-card">
         <img style="width: 310px; margin: 10px 0px 2px 0px" height="126px"   src="./img/Stitch.png" alt="png">
       </span>
@@ -433,9 +435,19 @@
       </p>
     </div>
 
+    
   </div>
 </div>
+
+  <div class="navigation">
+  <div class="button" data-dir="prev"> &#171;</div>
+  <div class="button" data-dir="next"> &#187; </div>
+</div>
+
+
 </section>
+
+
 
 
 
@@ -636,7 +648,7 @@
 
     <section id="contact" class=" text-white masked section">
       <div class="container">
-        <header class="text-center col-md-8 col-md-offset-2">
+        <header class="text-center col-md-8 col-md-offset">
           <div >
           <h2  class="text-white contact-title " style="margin: 2rem;  margin-top: 4rem; ">contact Us</h2>
        
@@ -1208,10 +1220,50 @@ var canvas = document.getElementById('nokey'),
 
 
 
+// slide button
 
 
+var slide = $("div.slider").children("ul");
+var images = $("div.slider").find("div.image");
+var currentPosition = 1;
+var WidthOfImages = images.width();
+var totalImages = images.length;
+var totalWidth = totalImages * WidthOfImages;
 
+$("div.button").on("click", function() {
 
+  var direction = $(this).data("dir");
+
+  if (direction == "next") {
+    currentPosition = currentPosition + 1;
+    if (currentPosition <= totalImages) {
+      slide.animate({
+        "margin-left": "-=" + WidthOfImages
+      });
+    } else {
+      currentPosition = 1;
+      slide.animate({
+        "margin-left": "0"
+      });
+    }
+  } else if (direction == "prev") {
+    currentPosition = currentPosition - 1;
+
+    if (currentPosition > 0) {
+      slide.animate({
+        "margin-left": "+=" + WidthOfImages
+      });
+    } else if (currentPosition == 0) {
+      currentPosition = totalImages;
+
+      slide.animate({
+        "margin-left": "-" + (totalWidth - WidthOfImages)
+      });
+    }
+
+  }
+
+});
 
 
 
